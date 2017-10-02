@@ -1,7 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.it.gcmvp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.w3.org/ns/widgets ">
+<widget id="com.it.gcmvp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
@@ -17,6 +15,13 @@
     </feature>
     <feature name="Flashlight">
         <param name="android-package" value="nl.xservices.plugins.Flashlight" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="RemoteInjection">
+        <param name="android-package" value="com.truckmovers.cordova.RemoteInjectionPlugin" />
+        <param name="onload" value="true" />
     </feature>
     <name>GcmvpWrapper</name>
     <description>

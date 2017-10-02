@@ -32,6 +32,22 @@ module.exports = [
         "clobbers": [
             "window.plugins.flashlight"
         ]
+    },
+    {
+        "id": "cordova-plugin-dialogs.notification",
+        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+        "pluginId": "cordova-plugin-dialogs",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "id": "cordova-plugin-dialogs.notification_android",
+        "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
+        "pluginId": "cordova-plugin-dialogs",
+        "merges": [
+            "navigator.notification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -42,7 +58,9 @@ module.exports.metadata =
     "cordova-plugin-audioinput": "0.3.0",
     "cordova-plugin-insomnia": "4.3.0",
     "cordova-plugin-vibration": "2.1.5",
-    "cordova-plugin-flashlight": "3.2.0"
+    "cordova-plugin-flashlight": "3.2.0",
+    "cordova-plugin-dialogs": "1.3.3",
+    "cordova-plugin-remote-injection": "0.5.2"
 };
 // BOTTOM OF METADATA
 });

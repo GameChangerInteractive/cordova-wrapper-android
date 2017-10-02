@@ -20,7 +20,8 @@
 package com.it.gcmvp;
 
 import android.os.Bundle;
-import org.apache.cordova.*;
+
+import org.apache.cordova.CordovaActivity;
 
 public class MainActivity extends CordovaActivity
 {
@@ -38,4 +39,5 @@ public class MainActivity extends CordovaActivity
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
     }
+
 }

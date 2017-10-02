@@ -63,7 +63,7 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
     protected final SystemCookieManager cookieManager;
     protected CordovaPreferences preferences;
     protected CordovaBridge bridge;
-    protected CordovaWebViewEngine.Client client;
+    public CordovaWebViewEngine.Client client;
     protected CordovaWebView parentWebView;
     protected CordovaInterface cordova;
     protected PluginManager pluginManager;

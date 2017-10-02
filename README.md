@@ -1,2 +1,2 @@
 # wrapper-android
-:android: native cordova-enabled android webview
+:iphone: native cordova-enabled android webview

@@ -17,7 +17,7 @@ public class CordovaGcmvpActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acme_main);
+        setContentView(R.layout.gcmvp_main);
 
         acmeWebView = (AcmeWebView) findViewById(R.id.tutorialView);
         acmeWebView.onCreate(savedInstanceState);

@@ -3,11 +3,11 @@
 
 AcmeWebview is a Wrapper class to load cordova with plugins like below:
 
-cordova-plugin-audioinput
-cordova-plugin-flashlight
-cordova-plugin-insomnia
-cordova-plugin-vibration
-cordova-plugin-whitelist
+cordova-plugin-audioinput<br>
+cordova-plugin-flashlight<br>
+cordova-plugin-insomnia<br>
+cordova-plugin-vibration<br>
+cordova-plugin-whitelist<br>
     
 # How to use
 public class CordovaTestActivity extends Activity {

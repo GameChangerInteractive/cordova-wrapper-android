@@ -15,8 +15,6 @@ public class CordovaTestActivity extends Activity {
         acmeWebView.onCreate(savedInstanceState);
 
         String launchUrl = "https://www.gcmvp.com";
-//        String launchUrl = "http://192.168.0.49/cordova/android";
-//        String launchUrl = acmeWebView.launchUrl;
         acmeWebView.loadUrl(launchUrl);
     }
 

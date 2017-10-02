@@ -10,7 +10,7 @@ cordova-plugin-vibration<br>
 cordova-plugin-whitelist<br>
     
 # How to use
-public class CordovaTestActivity extends Activity {
+public class CordovaGcmvpActivity extends Activity {
 
     AcmeWebView acmeWebView;
 
@@ -21,9 +21,14 @@ public class CordovaTestActivity extends Activity {
 
         acmeWebView = (AcmeWebView) findViewById(R.id.tutorialView);
         acmeWebView.onCreate(savedInstanceState);
+    }
 
-        String launchUrl = "https://www.gcmvp.com";
-        acmeWebView.loadUrl(launchUrl);
+    /**
+     * load site
+     * @param aUrl
+     */
+    public void loadUrl(String aUrl) {
+        acmeWebView.loadUrl(aUrl);
     }
 
     @Override

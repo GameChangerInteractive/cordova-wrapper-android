@@ -10,17 +10,17 @@ import android.view.MenuItem;
  * Created by Android on 9/29/2017.
  */
 
-public class CordovaGcmvpActivity extends Activity {
+public class GcmvpCordovaActivity extends Activity {
 
-    AcmeWebView acmeWebView;
+    GcmvpWebView gcmvpWebView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gcmvp_main);
 
-        acmeWebView = (AcmeWebView) findViewById(R.id.tutorialView);
-        acmeWebView.onCreate(savedInstanceState);
+        gcmvpWebView = (GcmvpWebView) findViewById(R.id.tutorialView);
+        gcmvpWebView.onCreate(savedInstanceState);
     }
 
     /**
@@ -28,81 +28,81 @@ public class CordovaGcmvpActivity extends Activity {
      * @param aUrl
      */
     public void loadUrl(String aUrl) {
-        acmeWebView.loadUrl(aUrl);
+        gcmvpWebView.loadUrl(aUrl);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        acmeWebView.onResume();
+        gcmvpWebView.onResume();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        acmeWebView.onPause();
+        gcmvpWebView.onPause();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        acmeWebView.onDestroy();
+        gcmvpWebView.onDestroy();
     }
 
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        acmeWebView.onNewIntent(intent);
+        gcmvpWebView.onNewIntent(intent);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        acmeWebView.onStop();
+        gcmvpWebView.onStop();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        acmeWebView.onStart();
+        gcmvpWebView.onStart();
     }
 
     @Override
     public void startActivityForResult(Intent intent, int requestCode, Bundle options) {
         super.startActivityForResult(intent, requestCode, options);
-        acmeWebView.startActivityForResult(intent, requestCode, options);
+        gcmvpWebView.startActivityForResult(intent, requestCode, options);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        acmeWebView.onActivityResult(requestCode, resultCode, data);
+        gcmvpWebView.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        return acmeWebView.onCreateOptionsMenu(menu);
+        return gcmvpWebView.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        return acmeWebView.onPrepareOptionsMenu(menu);
+        return gcmvpWebView.onPrepareOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return acmeWebView.onOptionsItemSelected(item);
+        return gcmvpWebView.onOptionsItemSelected(item);
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        acmeWebView.onSaveInstanceState(outState);
+        gcmvpWebView.onSaveInstanceState(outState);
     }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        acmeWebView.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        gcmvpWebView.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }

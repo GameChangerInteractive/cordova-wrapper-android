@@ -42,7 +42,7 @@ import java.util.Locale;
  */
 
 //public class AcmeWebView extends SystemWebView implements CordovaInterface {
-public class AcmeWebView extends LinearLayout {
+public class GcmvpWebView extends LinearLayout {
 
     public static String TAG = "CordovaActivity";
 
@@ -69,11 +69,11 @@ public class AcmeWebView extends LinearLayout {
 
     Activity mActivity;
 
-    public AcmeWebView(Context context) {
+    public GcmvpWebView(Context context) {
         super(context);
     }
 
-    public AcmeWebView(Context context, AttributeSet attrs) {
+    public GcmvpWebView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mActivity = (Activity) context;
     }
@@ -184,7 +184,7 @@ public class AcmeWebView extends LinearLayout {
             @Override
             public Object onMessage(String id, Object data) {
                 // Plumb this to CordovaActivity.onMessage for backwards compatibility
-                return AcmeWebView.this.onMessage(id, data);
+                return GcmvpWebView.this.onMessage(id, data);
             }
         };
     }
@@ -326,7 +326,7 @@ public class AcmeWebView extends LinearLayout {
      * @param failingUrl  The url that failed to load.
      */
     public void onReceivedError(final int errorCode, final String description, final String failingUrl) {
-        final AcmeWebView me = this;
+        final GcmvpWebView me = this;
 
         // If errorUrl specified, then load it
         final String errorUrl = preferences.getString("errorUrl", null);
@@ -356,7 +356,7 @@ public class AcmeWebView extends LinearLayout {
      * Display an error dialog and optionally exit application.
      */
     public void displayError(final String title, final String message, final String button, final boolean exit) {
-        final AcmeWebView me = this;
+        final GcmvpWebView me = this;
         mActivity.runOnUiThread(new Runnable() {
             public void run() {
                 try {

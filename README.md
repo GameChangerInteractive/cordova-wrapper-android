@@ -1,6 +1,14 @@
 # wrapper-android
 :iphone: native cordova-enabled android webview
 
+AcmeWebview is a Wrapper class to load cordova with plugins like below:
+
+cordova-plugin-audioinput
+cordova-plugin-flashlight
+cordova-plugin-insomnia
+cordova-plugin-vibration
+cordova-plugin-whitelist
+    
 # How to use
 public class CordovaTestActivity extends Activity {
 

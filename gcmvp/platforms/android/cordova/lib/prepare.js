@@ -263,7 +263,7 @@ function updateSplashes(cordovaProject, platformResourcesDir) {
         return;
     }
 
-    var resourceMap = mapImageResources(cordovaProject.root, platformResourcesDir, 'drawable', 'acme_screen.png');
+    var resourceMap = mapImageResources(cordovaProject.root, platformResourcesDir, 'drawable', 'gcmvp_screen.png');
 
     var hadMdpi = false;
     resources.forEach(function (resource) {
@@ -274,14 +274,14 @@ function updateSplashes(cordovaProject, platformResourcesDir) {
             hadMdpi = true;
         }
         var targetPath = getImageResourcePath(
-            platformResourcesDir, 'drawable', resource.density, 'acme_screen.png', path.basename(resource.src));
+            platformResourcesDir, 'drawable', resource.density, 'gcmvp_screen.png', path.basename(resource.src));
         resourceMap[targetPath] = resource.src;
     });
 
     // There's no "default" drawable, so assume default == mdpi.
     if (!hadMdpi && resources.defaultResource) {
         var targetPath = getImageResourcePath(
-            platformResourcesDir, 'drawable', 'mdpi', 'acme_screen.png', path.basename(resources.defaultResource.src));
+            platformResourcesDir, 'drawable', 'mdpi', 'gcmvp_screen.png', path.basename(resources.defaultResource.src));
         resourceMap[targetPath] = resources.defaultResource.src;
     }
 
@@ -293,7 +293,7 @@ function updateSplashes(cordovaProject, platformResourcesDir) {
 function cleanSplashes(projectRoot, projectConfig, platformResourcesDir) {
     var resources = projectConfig.getSplashScreens('android');
     if (resources.length > 0) {
-        var resourceMap = mapImageResources(projectRoot, platformResourcesDir, 'drawable', 'acme_screen.png');
+        var resourceMap = mapImageResources(projectRoot, platformResourcesDir, 'drawable', 'gcmvp_screen.png');
         events.emit('verbose', 'Cleaning splash screens at ' + platformResourcesDir);
 
         // No source paths are specified in the map, so updatePaths() will delete the target files.
@@ -311,7 +311,7 @@ function updateIcons(cordovaProject, platformResourcesDir) {
         return;
     }
 
-    var resourceMap = mapImageResources(cordovaProject.root, platformResourcesDir, 'mipmap', 'acme_icon.png');
+    var resourceMap = mapImageResources(cordovaProject.root, platformResourcesDir, 'mipmap', 'gcmvp_icon.png');
 
     var android_icons = {};
     var default_icon;
@@ -362,14 +362,14 @@ function updateIcons(cordovaProject, platformResourcesDir) {
     // project's config.xml location, so we use it as base path.
     for (var density in android_icons) {
         var targetPath = getImageResourcePath(
-            platformResourcesDir, 'mipmap', density, 'acme_icon.png', path.basename(android_icons[density].src));
+            platformResourcesDir, 'mipmap', density, 'gcmvp_icon.png', path.basename(android_icons[density].src));
         resourceMap[targetPath] = android_icons[density].src;
     }
 
     // There's no "default" drawable, so assume default == mdpi.
     if (default_icon && !android_icons.mdpi) {
         var defaultTargetPath = getImageResourcePath(
-            platformResourcesDir, 'mipmap', 'mdpi', 'acme_icon.png', path.basename(default_icon.src));
+            platformResourcesDir, 'mipmap', 'mdpi', 'gcmvp_icon.png', path.basename(default_icon.src));
         resourceMap[defaultTargetPath] = default_icon.src;
     }
 
@@ -381,7 +381,7 @@ function updateIcons(cordovaProject, platformResourcesDir) {
 function cleanIcons(projectRoot, projectConfig, platformResourcesDir) {
     var icons = projectConfig.getIcons('android');
     if (icons.length > 0) {
-        var resourceMap = mapImageResources(projectRoot, platformResourcesDir, 'mipmap', 'acme_icon.png');
+        var resourceMap = mapImageResources(projectRoot, platformResourcesDir, 'mipmap', 'gcmvp_icon.png');
         events.emit('verbose', 'Cleaning icons at ' + platformResourcesDir);
 
         // No source paths are specified in the map, so updatePaths() will delete the target files.

@@ -21,6 +21,7 @@ public class GcmvpCordovaActivity extends Activity {
 
         gcmvpWebView = (GcmvpWebView) findViewById(R.id.tutorialView);
         gcmvpWebView.onCreate(savedInstanceState);
+//        loadUrl("https://www.gcmvp.com");
     }
 
     /**

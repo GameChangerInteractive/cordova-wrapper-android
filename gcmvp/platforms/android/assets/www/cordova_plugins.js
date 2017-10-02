@@ -48,6 +48,15 @@ module.exports = [
         "merges": [
             "navigator.notification"
         ]
+    },
+    {
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "pluginId": "cordova-plugin-inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -60,6 +69,7 @@ module.exports.metadata =
     "cordova-plugin-vibration": "2.1.5",
     "cordova-plugin-flashlight": "3.2.0",
     "cordova-plugin-dialogs": "1.3.3",
+    "cordova-plugin-inappbrowser": "1.7.1",
     "cordova-plugin-remote-injection": "0.5.2"
 };
 // BOTTOM OF METADATA

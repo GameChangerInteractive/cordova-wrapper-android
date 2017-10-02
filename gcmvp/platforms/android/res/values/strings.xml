@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="acme_app_name">GcmvpWrapper</string>
-    <string name="acme_launcher_name">@string/acme_app_name</string>
-    <string name="acme_activity_name">@string/acme_launcher_name</string>
+    <string name="gcmvp_app_name">GcmvpWrapper</string>
+    <string name="gcmvp_launcher_name">@string/gcmvp_app_name</string>
+    <string name="gcmvp_activity_name">@string/gcmvp_launcher_name</string>
 </resources>

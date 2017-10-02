@@ -10,7 +10,7 @@ import android.view.MenuItem;
  * Created by Android on 9/29/2017.
  */
 
-public class CordovaTestActivity extends Activity {
+public class CordovaGcmvpActivity extends Activity {
 
     AcmeWebView acmeWebView;
 
@@ -21,9 +21,14 @@ public class CordovaTestActivity extends Activity {
 
         acmeWebView = (AcmeWebView) findViewById(R.id.tutorialView);
         acmeWebView.onCreate(savedInstanceState);
+    }
 
-        String launchUrl = "https://www.gcmvp.com";
-        acmeWebView.loadUrl(launchUrl);
+    /**
+     * load site
+     * @param aUrl
+     */
+    public void loadUrl(String aUrl) {
+        acmeWebView.loadUrl(aUrl);
     }
 
     @Override

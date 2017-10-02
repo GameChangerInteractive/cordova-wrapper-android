@@ -17,8 +17,8 @@
        under the License.
 */
 
-apply plugin: 'com.android.library'
-//apply plugin: 'com.android.application'
+//apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
 
 buildscript {
     repositories {
@@ -32,8 +32,8 @@ buildscript {
     // and https://issues.apache.org/jira/browse/CB-8143
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+//        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.4'
+//        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
     }
 }
 
@@ -168,7 +168,7 @@ android {
 
     defaultConfig {
         versionCode cdvVersionCode ?: new BigInteger("" + privateHelpers.extractIntFromManifest("versionCode"))
-//        applicationId privateHelpers.extractStringFromManifest("package")
+        applicationId privateHelpers.extractStringFromManifest("package")
 
         if (cdvMinSdkVersion != null) {
             minSdkVersion cdvMinSdkVersion

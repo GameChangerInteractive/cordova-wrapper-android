@@ -2,9 +2,9 @@
 <manifest android:hardwareAccelerated="true" android:versionCode="10000" android:versionName="1.0.0" package="com.it.gcmvp" xmlns:android="http://schemas.android.com/apk/res/android">
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <application android:hardwareAccelerated="true" android:icon="@mipmap/acme_icon" android:label="@string/acme_app_name" android:supportsRtl="true">
-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/acme_activity_name" android:launchMode="singleTop" android:name=".CordovaTestActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" android:windowSoftInputMode="adjustResize">
-            <intent-filter android:label="@string/acme_launcher_name">
+    <application android:hardwareAccelerated="true" android:icon="@mipmap/gcmvp_icon" android:label="@string/gcmvp_app_name" android:supportsRtl="true">
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/gcmvp_activity_name" android:launchMode="singleTop" android:name=".CordovaGcmvpActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:label="@string/gcmvp_launcher_name">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

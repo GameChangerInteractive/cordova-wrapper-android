@@ -300,7 +300,6 @@ public class GcmvpWebView extends LinearLayout {
     public void startActivityForResult(Intent intent, int requestCode, Bundle options) {
         // Capture requestCode here so that it is captured in the setActivityResultCallback() case.
         cordovaInterface.setActivityResultRequestCode(requestCode);
-        mActivity.startActivityForResult(intent, requestCode, options);
     }
 
     /**

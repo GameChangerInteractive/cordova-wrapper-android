@@ -142,7 +142,7 @@ public class CordovaWebViewImpl implements CordovaWebView {
 
         // Create a timeout timer for loadUrl
         final int currentLoadUrlTimeout = loadUrlTimeout;
-        final int loadUrlTimeoutValue = preferences.getInteger("LoadUrlTimeoutValue", 90000);
+        final int loadUrlTimeoutValue = preferences.getInteger("LoadUrlTimeoutValue", 20000);
 
         // Timeout error method
         final Runnable loadError = new Runnable() {

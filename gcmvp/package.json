@@ -11,6 +11,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "cordova-android": "^6.2.3",
+        "cordova-plugin-android-permissions": "^1.0.0",
         "cordova-plugin-audioinput": "^0.3.0",
         "cordova-plugin-camera": "^2.4.1",
         "cordova-plugin-compat": "^1.0.0",
@@ -30,8 +31,9 @@
             "cordova-plugin-vibration": {},
             "cordova-plugin-flashlight": {},
             "cordova-plugin-dialogs": {},
+            "cordova-plugin-remote-injection": {},
             "cordova-plugin-inappbrowser": {},
-            "cordova-plugin-remote-injection": {}
+            "cordova-plugin-android-permissions": {}
         },
         "platforms": [
             "android"

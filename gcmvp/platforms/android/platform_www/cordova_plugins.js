@@ -57,6 +57,14 @@ module.exports = [
             "cordova.InAppBrowser.open",
             "window.open"
         ]
+    },
+    {
+        "id": "cordova-plugin-android-permissions.Permissions",
+        "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+        "pluginId": "cordova-plugin-android-permissions",
+        "clobbers": [
+            "cordova.plugins.permissions"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -69,8 +77,9 @@ module.exports.metadata =
     "cordova-plugin-vibration": "2.1.5",
     "cordova-plugin-flashlight": "3.2.0",
     "cordova-plugin-dialogs": "1.3.3",
+    "cordova-plugin-remote-injection": "0.5.2",
     "cordova-plugin-inappbrowser": "1.7.1",
-    "cordova-plugin-remote-injection": "0.5.2"
+    "cordova-plugin-android-permissions": "1.0.0"
 };
 // BOTTOM OF METADATA
 });

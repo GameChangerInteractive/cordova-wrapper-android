@@ -22,6 +22,14 @@ public class GcmvpCordovaActivity extends Activity {
         gcmvpWebView = (GcmvpWebView) findViewById(R.id.tutorialView);
         gcmvpWebView.onCreate(savedInstanceState);
 //        loadUrl("https://www.gcmvp.com");
+        loadUrl("https://games.gamechanger.studio/develop");
+//        loadUrl("https://games.gamechanger.studio/develop/shiny-blast/");
+//        loadUrl("https://www.google.com");
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
     }
 
     /**

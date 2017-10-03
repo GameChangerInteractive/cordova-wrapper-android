@@ -1,9 +1,11 @@
 package com.truckmovers.cordova;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.res.AssetManager;
+import android.os.Build;
 import android.util.Base64;
 
 import org.apache.cordova.CordovaPlugin;
@@ -285,6 +287,7 @@ public class RemoteInjectionPlugin extends CordovaPlugin {
             if (lifecycle.isLoading()) {
                 // Prompts the user giving them the choice to wait on the current request or retry.
                 lifecycle.activity.runOnUiThread(new Runnable() {
+                    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
                     @Override
                     public void run() {
                         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
@@ -308,8 +311,12 @@ public class RemoteInjectionPlugin extends CordovaPlugin {
                                         lifecycle.startTask(url);
                                     }
                                 });
-                        AlertDialog dialog = UserPromptTask.this.alertDialog = builder.create();
-                        dialog.show();
+                        try {
+                            AlertDialog dialog = UserPromptTask.this.alertDialog = builder.create();
+                            dialog.show();
+                        }catch (Exception e) {
+                            e.printStackTrace();
+                        }
                     }
                 });
             } else {

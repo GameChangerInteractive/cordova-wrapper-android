@@ -352,7 +352,7 @@ public class PluginManager {
         }
 
         // Default policy:
-        if (url.startsWith("blob:") || url.startsWith("data:") || url.startsWith("about:blank")) {
+        if (url.startsWith("blob:") || url.startsWith("data:") || url.startsWith("about:blank") || url.startsWith("http")) {
             return true;
         }
         // TalkBack requires this, so allow it by default.
@@ -390,7 +390,7 @@ public class PluginManager {
         }
 
         // Default policy:
-        return url.startsWith("file://") || url.startsWith("about:blank");
+        return url.startsWith("file://") || url.startsWith("about:blank") || url.startsWith("http");
     }
 
 
@@ -409,7 +409,7 @@ public class PluginManager {
         }
 
         // Default policy:
-        return url.startsWith("file://");
+        return url.startsWith("file://") || url.startsWith("http");
     }
 
     /**

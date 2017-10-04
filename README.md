@@ -1,4 +1,4 @@
-# wrapper-android
+# wrapper-android v1.0.0
 :iphone: native cordova-enabled android webview
 
 GcmvpCordovaActivity is an Activity used the Cordova WebView Wrapper including plugins like below:

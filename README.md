@@ -11,13 +11,13 @@ cordova-plugin-whitelist<br>
 
 # How to use in your settings.gradle
 
-include ':libgcmvp', ':libcordova'
+include ':libgcmvp', ':libgcmvpcordova'
 
 # How to use in your module gradle
 
 compile project(path: ':libgcmvp')
 
-compile project(path: ':libcordova')
+compile project(path: ':libgcmvpcordova')
 
 # How to use in your Activity
 

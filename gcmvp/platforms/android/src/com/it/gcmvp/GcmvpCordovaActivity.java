@@ -13,7 +13,7 @@ import android.view.MenuItem;
 public class GcmvpCordovaActivity extends Activity {
 
     GcmvpWebView gcmvpWebView;
-    final static String EXTRA_GCMVP_URL = "gcmvp_url";
+    public final static String EXTRA_GCMVP_URL = "gcmvp_url";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

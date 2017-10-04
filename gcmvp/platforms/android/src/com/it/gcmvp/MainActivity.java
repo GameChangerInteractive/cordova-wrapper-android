@@ -19,25 +19,23 @@
 
 package com.it.gcmvp;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
-import org.apache.cordova.CordovaActivity;
-
-public class MainActivity extends CordovaActivity
-{
+public class MainActivity extends Activity implements View.OnClickListener {
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // enable Cordova apps to be started in the background
-        Bundle extras = getIntent().getExtras();
-        if (extras != null && extras.getBoolean("cdvStartInBackground", false)) {
-            moveTaskToBack(true);
-        }
-
-        // Set by <content src="index.html" /> in config.xml
-        loadUrl(launchUrl);
+        setContentView(R.layout.activity_main);
+        findViewById(R.id.go_game_site).setOnClickListener(MainActivity.this);
     }
 
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(MainActivity.this, GcmvpCordovaActivity.class);
+        intent.putExtra(GcmvpCordovaActivity.EXTRA_GCMVP_URL, "https://games.gamechanger.studio/develop");
+        startActivity(intent);
+    }
 }

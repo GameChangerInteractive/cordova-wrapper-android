@@ -13,16 +13,15 @@ cordova-plugin-whitelist<br>
 
 You must include the "GcmvpCordovaActivity" activity in application
 
-[<?xml version='1.0' encoding='utf-8'?>]
+<?xml version='1.0' encoding='utf-8'?>
 
-[<manifest 
+<manifest 
     android:hardwareAccelerated="true" 
     android:versionCode="10000" 
     android:versionName="1.0.0" 
     package="your package name" 
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-		<!-- you must add this feature -->
     <supports-screens 
         android:anyDensity="true" 
         android:largeScreens="true" 
@@ -66,7 +65,7 @@ You must include the "GcmvpCordovaActivity" activity in application
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     
-</manifest>]
+</manifest>
 
 # How to use in your Activity
 
@@ -91,9 +90,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 # How to use in your xml Layout - activity_main.xml
 
-[<?xml version="1.0" encoding="utf-8"?>]
+<?xml version="1.0" encoding="utf-8"?>
 
-[<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:gravity="center"
     android:layout_width="match_parent"
@@ -105,4 +104,4 @@ public class MainActivity extends Activity implements View.OnClickListener {
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     
-</LinearLayout>]
+</LinearLayout>

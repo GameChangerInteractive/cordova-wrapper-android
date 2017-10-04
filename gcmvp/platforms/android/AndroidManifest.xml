@@ -36,6 +36,7 @@
             </intent-filter>
         </activity>
 
+        <!-- you must add this activity -->
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
             android:name=".GcmvpCordovaActivity"

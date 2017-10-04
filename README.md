@@ -1,7 +1,7 @@
 # wrapper-android
 :iphone: native cordova-enabled android webview
 
-GcmvpCordovaActivity is an Activity by using the Cordova WebView Wrapper including plugins like below:
+GcmvpCordovaActivity is an Activity used the Cordova WebView Wrapper including plugins like below:
 
 cordova-plugin-audioinput<br>
 cordova-plugin-flashlight<br>
@@ -11,17 +11,18 @@ cordova-plugin-whitelist<br>
 
 # How to use in your AndroidManifest.xml
 
-You must include "GcmvpCordovaActivity" in <application>
+You must include the "GcmvpCordovaActivity" activity in application
 
-<?xml version='1.0' encoding='utf-8'?>
+[<?xml version='1.0' encoding='utf-8'?>]
 
-<manifest 
+[<manifest 
     android:hardwareAccelerated="true" 
     android:versionCode="10000" 
     android:versionName="1.0.0" 
-    package="com.it.gcmvp" 
+    package="your package name" 
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+		<!-- you must add this feature -->
     <supports-screens 
         android:anyDensity="true" 
         android:largeScreens="true" 
@@ -39,18 +40,15 @@ You must include "GcmvpCordovaActivity" in <application>
         android:supportsRtl="true">
 
         <activity 
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" 
-            android:label="@string/gcmvp_activity_name" 
-            android:launchMode="singleTop" 
             android:name=".MainActivity" 
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar" 
-            android:windowSoftInputMode="adjustResize">
             <intent-filter android:label="@string/gcmvp_launcher_name">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         
+        <!-- you must add this activity -->
         <activity 
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" 
             android:name=".GcmvpCordovaActivity" 
@@ -60,6 +58,7 @@ You must include "GcmvpCordovaActivity" in <application>
         
     </application>
     
+    <!-- you must add these permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -67,11 +66,12 @@ You must include "GcmvpCordovaActivity" in <application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     
-</manifest>
+</manifest>]
 
 # How to use in your Activity
 
 public class MainActivity extends Activity implements View.OnClickListener {
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,15 +82,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(MainActivity.this, GcmvpCordovaActivity.class);
-        intent.putExtra(GcmvpCordovaActivity.EXTRA_GCMVP_URL, "https://games.gamechanger.studio/develop"); //for example you replace your custom URL.
+        intent.putExtra(GcmvpCordovaActivity.EXTRA_GCMVP_URL, 
+        "https://games.gamechanger.studio/develop"); //For example: you can replace your custom URL.
         startActivity(intent);
     }
+    
 }
 
 # How to use in your xml Layout - activity_main.xml
 
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+[<?xml version="1.0" encoding="utf-8"?>]
+
+[<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:gravity="center"
     android:layout_width="match_parent"
@@ -102,4 +105,4 @@ public class MainActivity extends Activity implements View.OnClickListener {
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     
-</LinearLayout>
+</LinearLayout>]

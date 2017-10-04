@@ -139,8 +139,8 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            <state relative-caret-position="192">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="43" />
               <folding>
                 <element signature="e#684#708#0" expanded="true" />
                 <element signature="e#880#909#0" expanded="true" />
@@ -3175,8 +3175,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="192">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="43" />
           <folding>
             <element signature="e#684#708#0" expanded="true" />
             <element signature="e#880#909#0" expanded="true" />

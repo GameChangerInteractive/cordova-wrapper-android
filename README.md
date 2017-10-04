@@ -9,63 +9,14 @@ cordova-plugin-insomnia<br>
 cordova-plugin-vibration<br>
 cordova-plugin-whitelist<br>
 
-# How to use in your AndroidManifest.xml
+# How to use in your settings.gradle
 
-You must include the "GcmvpCordovaActivity" activity in application
+*include ':libgcmvp', ':libcordova'
 
-<?xml version='1.0' encoding='utf-8'?>
+# How to use in your module gradle
 
-<manifest 
-    android:hardwareAccelerated="true" 
-    android:versionCode="10000" 
-    android:versionName="1.0.0" 
-    package="your package name" 
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <supports-screens 
-        android:anyDensity="true" 
-        android:largeScreens="true" 
-        android:normalScreens="true" 
-        android:resizeable="true" 
-        android:smallScreens="true" 
-        android:xlargeScreens="true" />
-
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
-
-    <application 
-        android:hardwareAccelerated="true" 
-        android:icon="@mipmap/gcmvp_icon" 
-        android:label="@string/gcmvp_app_name" 
-        android:supportsRtl="true">
-
-        <activity 
-            android:name=".MainActivity" 
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
-        <!-- you must add this activity -->
-        <activity 
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" 
-            android:name=".GcmvpCordovaActivity" 
-            android:launchMode="singleTop" 
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" 
-            android:windowSoftInputMode="adjustResize"/>
-        
-    </application>
-    
-    <!-- you must add these permissions -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    
-</manifest>
+*compile project(path: ':libgcmvp')
+*compile project(path: ':libcordova')
 
 # How to use in your Activity
 

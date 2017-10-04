@@ -1,21 +1,20 @@
 package com.exelerus.cordova.audioinputcapture;
 
-import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.CallbackContext;
-import org.apache.cordova.PluginResult;
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PermissionHelper;
+import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.ref.WeakReference;
-
-import android.os.Handler;
-import android.os.Message;
-import android.util.Log;
-import android.content.pm.PackageManager;
-import org.apache.cordova.PermissionHelper;
-import android.Manifest;
 
 public class AudioInputCapture extends CordovaPlugin
 {

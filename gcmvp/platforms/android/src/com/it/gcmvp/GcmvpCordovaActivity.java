@@ -13,6 +13,7 @@ import android.view.MenuItem;
 public class GcmvpCordovaActivity extends Activity {
 
     GcmvpWebView gcmvpWebView;
+    final static String EXTRA_GCMVP_URL = "gcmvp_url";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -21,10 +22,8 @@ public class GcmvpCordovaActivity extends Activity {
 
         gcmvpWebView = (GcmvpWebView) findViewById(R.id.tutorialView);
         gcmvpWebView.onCreate(savedInstanceState);
-//        loadUrl("https://www.gcmvp.com");
-        loadUrl("https://games.gamechanger.studio/develop");
-//        loadUrl("https://games.gamechanger.studio/develop/shiny-blast/");
-//        loadUrl("https://www.google.com");
+        String url = getIntent().getStringExtra(EXTRA_GCMVP_URL);
+        loadUrl(url);
     }
 
     @Override

@@ -41,7 +41,7 @@ You must include the "GcmvpCordovaActivity" activity in application
         <activity 
             android:name=".MainActivity" 
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar" 
-            <intent-filter android:label="@string/gcmvp_launcher_name">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

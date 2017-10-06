@@ -2,9 +2,9 @@
 :iphone: native cordova-enabled android webview
 
 # How to use in your settings.gradle
-
+```
 include ':libgcmvp', ':libgcmvpcordova'
-
+```
 # How to use in your module gradle
 ```
 compile project(path: ':libgcmvp')

@@ -14,13 +14,13 @@ cordova-plugin-whitelist<br>
 include ':libgcmvp', ':libgcmvpcordova'
 
 # How to use in your module gradle
-
+```
 compile project(path: ':libgcmvp')
 
 compile project(path: ':libgcmvpcordova')
-
+```
 # How to use in your Activity
-
+```
 public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
@@ -39,9 +39,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
     
 }
-
+```
 # How to use in your xml Layout - activity_main.xml
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -57,3 +57,4 @@ public class MainActivity extends Activity implements View.OnClickListener {
         android:layout_height="wrap_content" />
     
 </LinearLayout>
+```

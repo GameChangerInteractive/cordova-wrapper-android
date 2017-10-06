@@ -1,14 +1,6 @@
 # wrapper-android v1.0.0
 :iphone: native cordova-enabled android webview
 
-GcmvpCordovaActivity is an Activity used the Cordova WebView Wrapper including plugins like below:
-
-cordova-plugin-audioinput<br>
-cordova-plugin-flashlight<br>
-cordova-plugin-insomnia<br>
-cordova-plugin-vibration<br>
-cordova-plugin-whitelist<br>
-
 # How to use in your settings.gradle
 
 include ':libgcmvp', ':libgcmvpcordova'

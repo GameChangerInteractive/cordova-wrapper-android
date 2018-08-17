@@ -32,4 +32,6 @@
     <plugin name="cordova-plugin-remote-injection" spec="^0.5.2" />
     <plugin name="cordova-plugin-inappbrowser" spec="^1.7.1" />
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
+    <plugin name="cordova-plugin-media-capture" spec="^1.4.3" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.1" />
 </widget>

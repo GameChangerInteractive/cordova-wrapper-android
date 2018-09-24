@@ -9,14 +9,6 @@ module.exports = [
         ]
     },
     {
-        "id": "cordova-plugin-flashlight.Flashlight",
-        "file": "plugins/cordova-plugin-flashlight/www/Flashlight.js",
-        "pluginId": "cordova-plugin-flashlight",
-        "clobbers": [
-            "window.plugins.flashlight"
-        ]
-    },
-    {
         "id": "cordova-plugin-insomnia.Insomnia",
         "file": "plugins/cordova-plugin-insomnia/www/Insomnia.js",
         "pluginId": "cordova-plugin-insomnia",
@@ -31,6 +23,14 @@ module.exports = [
         "merges": [
             "navigator.notification",
             "navigator"
+        ]
+    },
+    {
+        "id": "cordova-plugin-flashlight.Flashlight",
+        "file": "plugins/cordova-plugin-flashlight/www/Flashlight.js",
+        "pluginId": "cordova-plugin-flashlight",
+        "clobbers": [
+            "window.plugins.flashlight"
         ]
     },
     {
@@ -320,25 +320,34 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
+    },
+    {
+        "id": "phonegap-plugin-media-stream.MediaDevices",
+        "file": "plugins/phonegap-plugin-media-stream/www/android/MediaDevices.js",
+        "pluginId": "phonegap-plugin-media-stream",
+        "clobbers": [
+            "navigator.mediaDevices"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.3.3",
-    "cordova-plugin-compat": "1.2.0",
+    "cordova-plugin-whitelist": "1.3.2",
+    "cordova-plugin-compat": "1.0.0",
     "cordova-plugin-audioinput": "0.3.0",
-    "cordova-plugin-flashlight": "3.2.0",
     "cordova-plugin-insomnia": "4.3.0",
-    "cordova-plugin-vibration": "2.1.6",
-    "cordova-plugin-dialogs": "1.3.4",
+    "cordova-plugin-vibration": "2.1.5",
+    "cordova-plugin-flashlight": "3.2.0",
+    "cordova-plugin-dialogs": "1.3.3",
     "cordova-plugin-remote-injection": "0.5.2",
-    "cordova-plugin-inappbrowser": "1.7.2",
+    "cordova-plugin-inappbrowser": "1.7.1",
     "cordova-plugin-android-permissions": "1.0.0",
     "cordova-plugin-file": "4.3.3",
     "cordova-plugin-media-capture": "1.4.3",
     "es6-promise-plugin": "4.2.2",
-    "cordova-plugin-x-socialsharing": "5.4.1"
+    "cordova-plugin-x-socialsharing": "5.4.1",
+    "phonegap-plugin-media-stream": "1.2.1"
 };
 // BOTTOM OF METADATA
 });

@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="gcmvp_app_name">GcmvpWrapper</string>
-    <string name="gcmvp_launcher_name">@string/gcmvp_app_name</string>
-    <string name="gcmvp_activity_name">@string/gcmvp_launcher_name</string>
-</resources>

@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Build ARR
           command: ./gradlew assembleRelease
-      - run:
+      - run: |
           mkdir libs
           mv ./CordovaLib/build/outputs/aar/*.arr ./libs/libgcmvpcordova.aar
           mv ./app/build/outputs/aar/*.arr ./libs/libgcmvp.aar

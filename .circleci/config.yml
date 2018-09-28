@@ -24,7 +24,7 @@ jobs:
           command: ./gradlew assembleRelease
       - run: |
           mkdir libs
-          mv CordovaLib/build/outputs/aar/CordovaLib-release.aar libs/libgcmvpcordova.aar
-          mv app/build/outputs/aar/app-release.arr libs/libgcmvp.aar
+          mv ~/project/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-release.aar libs/libgcmvpcordova.aar
+          mv ~/project/platforms/android/app/build/outputs/aar/app-release.arr libs/libgcmvp.aar
       - store_artifacts:
           path: libs

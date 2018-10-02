@@ -4,3 +4,4 @@ build
 .gradle
 plugins
 .DS_Store
+local.properties

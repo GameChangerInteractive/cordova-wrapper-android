@@ -5,3 +5,4 @@ build
 plugins
 .DS_Store
 local.properties
+*.iml

@@ -56,3 +56,21 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        gc(MavenPublication) {
+            groupId 'com.gamechanger'
+            artifactId 'gc-cordova'
+            version '0.1'
+            artifact("app/build/outputs/aar/app-release.aar")
+        }
+    }
+    repositories {
+        maven {
+            url "$buildDir/repo"
+        }
+    }
+}

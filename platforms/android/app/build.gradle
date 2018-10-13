@@ -262,12 +262,12 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-    compile "com.android.support:support-v4:24.1.1+"
-    compile "com.google.android.gms:play-services-tagmanager:+"
-    compile "com.google.firebase:firebase-core:+"
-    compile "com.google.firebase:firebase-messaging:+"
-    compile "com.google.firebase:firebase-config:+"
-    compile "com.google.firebase:firebase-perf:+"
+    implementation "com.android.support:support-v4:24.1.1+"
+    implementation "com.google.android.gms:play-services-tagmanager:+"
+    implementation "com.google.firebase:firebase-core:+"
+    implementation "com.google.firebase:firebase-messaging:+"
+    implementation "com.google.firebase:firebase-config:+"
+    implementation "com.google.firebase:firebase-perf:+"
     // SUB-PROJECT DEPENDENCIES END
 }
 
@@ -330,3 +330,5 @@ for (def func : cdvPluginPostBuildExtras) {
 if (hasProperty('postBuildExtras')) {
     postBuildExtras()
 }
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,290 @@
+{
+  "project_info": {
+    "project_number": "622045606625",
+    "firebase_url": "https://game-changer-interactive.firebaseio.com",
+    "project_id": "game-changer-interactive",
+    "storage_bucket": "game-changer-interactive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:42e0cdf14a32484a",
+        "android_client_info": {
+          "package_name": "com.gamechanger.cordova.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:864f9795fcaabe87",
+        "android_client_info": {
+          "package_name": "com.gamechanger.cordova.yinzcam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:d09a964d430011d7",
+        "android_client_info": {
+          "package_name": "com.gamechanger.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:1dc70f17f3e6e70f",
+        "android_client_info": {
+          "package_name": "com.gamechanger.falcons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:f31c8e64c82d0b90",
+        "android_client_info": {
+          "package_name": "com.gamechanger.shinyblast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:aba1ad1c6fc0fc18",
+        "android_client_info": {
+          "package_name": "com.gamechanger.shinyblast.iowa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:eb73d70375101e09",
+        "android_client_info": {
+          "package_name": "com.gamechanger.shinyblast.kstate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:903f30194bfb556e",
+        "android_client_info": {
+          "package_name": "com.gamechanger.shinyblast.oilers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622045606625:android:e721a4459abc6538",
+        "android_client_info": {
+          "package_name": "com.gamechanger.shinyblast.redwings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622045606625-g61bjk96h14sk25p6q4kse21v3nnesqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ouNAd1MHEMD4l6ZW5ZAtnQk10TbsNyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

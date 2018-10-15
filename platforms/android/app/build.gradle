@@ -93,7 +93,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-firebase/cordova-build.gradle"
+
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -263,11 +263,6 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
     implementation "com.android.support:support-v4:24.1.1+"
-    implementation "com.google.android.gms:play-services-tagmanager:+"
-    implementation "com.google.firebase:firebase-core:+"
-    implementation "com.google.firebase:firebase-messaging:+"
-    implementation "com.google.firebase:firebase-config:+"
-    implementation "com.google.firebase:firebase-perf:+"
     // SUB-PROJECT DEPENDENCIES END
 }
 
@@ -330,5 +325,3 @@ for (def func : cdvPluginPostBuildExtras) {
 if (hasProperty('postBuildExtras')) {
     postBuildExtras()
 }
-
-apply plugin: 'com.google.gms.google-services'

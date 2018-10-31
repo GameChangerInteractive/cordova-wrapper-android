@@ -2,7 +2,6 @@ node_modules
 build
 .idea
 .gradle
-plugins
 .DS_Store
 local.properties
 *.iml

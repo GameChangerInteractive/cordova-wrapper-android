@@ -327,6 +327,20 @@ module.exports = [
     "clobbers": [
       "FirebasePlugin"
     ]
+  },
+  {
+      "id": "cordova-plugin-geolocation.geolocation",
+      "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "clobbers": [
+          "navigator.geolocation"
+      ]
+  },
+  {
+      "id": "cordova-plugin-geolocation.PositionError",
+      "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+      "pluginId": "cordova-plugin-geolocation",
+      "runs": true
   }
 ];
 module.exports.metadata = 
@@ -345,7 +359,8 @@ module.exports.metadata =
   "es6-promise-plugin": "4.2.2",
   "cordova-plugin-x-socialsharing": "5.4.1",
   "phonegap-plugin-media-stream": "1.2.1",
-  "cordova-plugin-firebase": "2.0.2"
+  "cordova-plugin-firebase": "2.0.2",
+  "cordova-plugin-geolocation": "4.0.1"
 };
 // BOTTOM OF METADATA
 });

@@ -6,10 +6,10 @@
 2. Add following to **app/build.gradle**:
   ```
   implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
-  implementation "com.google.firebase:firebase-core:+"
-  implementation "com.google.firebase:firebase-messaging:+"
-  implementation "com.google.firebase:firebase-config:+"
-  implementation 'com.google.firebase:firebase-auth:+'
+  implementation "com.google.firebase:firebase-core:15.+"
+  implementation "com.google.firebase:firebase-messaging:15.+"
+  implementation "com.google.firebase:firebase-config:15.+"
+  implementation "com.google.android.gms:play-services-location:15.0.+"
   ```
 3. To start GC game following code:
   ```

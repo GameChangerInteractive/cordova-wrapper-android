@@ -25,6 +25,6 @@ jobs:
       - run: |
           mkdir libs
           mv CordovaLib/build/outputs/aar/CordovaLib-release.aar libs/libgcmvpcordova.aar
-          mv app/build/outputs/aar/app-release.aar libs/libgcmvp.aar
+          mv app/build/outputs/aar/app-release.aar libs/libgcmvp-without-firebase.aar
       - store_artifacts:
           path: libs

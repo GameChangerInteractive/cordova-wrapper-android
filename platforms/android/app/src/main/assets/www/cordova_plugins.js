@@ -321,14 +321,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-firebase.FirebasePlugin",
-    "file": "plugins/cordova-plugin-firebase/www/firebase.js",
-    "pluginId": "cordova-plugin-firebase",
-    "clobbers": [
-      "FirebasePlugin"
-    ]
-  },
-  {
       "id": "cordova-plugin-geolocation.Coordinates",
       "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
       "pluginId": "cordova-plugin-geolocation",
@@ -377,7 +369,6 @@ module.exports.metadata =
   "es6-promise-plugin": "4.2.2",
   "cordova-plugin-x-socialsharing": "5.4.1",
   "phonegap-plugin-media-stream": "1.2.1",
-  "cordova-plugin-firebase": "2.0.2",
   "cordova-plugin-geolocation": "4.0.1-dev"
 };
 // BOTTOM OF METADATA
